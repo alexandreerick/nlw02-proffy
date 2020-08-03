@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PageHeader from '../../components/PageHeader';
+import TeacherItem from '../../components/TeacherItem';
 
 import * as Styled from './styles';
 
@@ -25,6 +26,12 @@ const TeacherList: React.FC = () => {
           </div>
         </form>
       </PageHeader>
+
+      <Styled.Main>
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+      </Styled.Main>
     </Styled.PageTeacherList>
   );
 }
