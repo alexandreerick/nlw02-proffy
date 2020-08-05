@@ -63,4 +63,19 @@ export const HeaderContent = styled.div`
     line-height: 4.2rem;
     color: var(--color-title-in-primary);
   }
+
+  p {
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+
+    @media (min-width: 700px) {
+      margin-bottom: 0;
+    }
+
+  }
+
 `;
