@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const InputComponent = styled.div`
+export const SelectComponent = styled.div`
     position: relative;
+    margin-bottom: 2.4rem;
 
-    + .input-block {
+    + .select-block {
       margin-top: 1.4rem;
 
       @media (min-width: 700px) {
@@ -16,7 +17,7 @@ export const InputComponent = styled.div`
       font-size: 1.4rem;
     }
 
-    input {
+    select {
       width: 100%;
       height: 5.6rem;
       margin-top: 0.8rem;
@@ -37,9 +38,5 @@ export const InputComponent = styled.div`
       left: 1.6rem;
       right: 1.6rem;
       bottom: 0;
-
-      @media (min-width: 700px) {
-        bottom: 25px;
-      }
     }
 `

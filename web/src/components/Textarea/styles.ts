@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const InputComponent = styled.div`
+export const TextAreaComponent = styled.div`
     position: relative;
+    margin-top: 2.4rem;
 
-    + .input-block {
+    + .textarea-block {
       margin-top: 1.4rem;
 
       @media (min-width: 700px) {
@@ -16,15 +17,17 @@ export const InputComponent = styled.div`
       font-size: 1.4rem;
     }
 
-    input {
+    textarea {
       width: 100%;
-      height: 5.6rem;
+      height: 16rem;
+      min-height: 8rem;
       margin-top: 0.8rem;
       border-radius: 0.8rem;
       background: var(--color-input-background);
       border: 1px solid var(--color-line-in-white);
       outline: 0;
-      padding: 0 1.6rem;
+      padding: 1.2rem 1.6rem;
+      resize: vertical;
       font: 1.6rem Archivo;
     }
 
@@ -36,10 +39,6 @@ export const InputComponent = styled.div`
       position: absolute;
       left: 1.6rem;
       right: 1.6rem;
-      bottom: 0;
-
-      @media (min-width: 700px) {
-        bottom: 25px;
-      }
+      bottom: 8px;
     }
 `
