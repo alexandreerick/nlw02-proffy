@@ -37,9 +37,5 @@ export const InputComponent = styled.div`
       left: 1.6rem;
       right: 1.6rem;
       bottom: 0;
-
-      @media (min-width: 700px) {
-        bottom: 25px;
-      }
     }
 `
