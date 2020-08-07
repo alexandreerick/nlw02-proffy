@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 import * as Styled from './styles';
 
@@ -9,6 +10,16 @@ import heartIcon from '../../assets/images/icons/heart.png';
 import { Image } from 'react-native';
 
 const Landing: React.FC = () => {
+  const { navigate } = useNavigation();
+
+  function handleNavigateToGiveClassesPage() {
+    navigate('GiveClasses');
+  }
+
+  function handleNavigateToStudyPages() {
+    navigate('Study');
+  }
+
   return (
     <Styled.Container>
       <Styled.ImageLanding source={landingImg} />
@@ -21,7 +32,7 @@ const Landing: React.FC = () => {
       </Styled.Title>
 
       <Styled.ButtonsContainer>
-        <Styled.Button primary >
+        <Styled.Button primary onPress={handleNavigateToStudyPages}>
           <Styled.ButtonImage source={studyIcon} />
 
           <Styled.ButtonText>
@@ -29,7 +40,7 @@ const Landing: React.FC = () => {
           </Styled.ButtonText>
         </Styled.Button>
 
-        <Styled.Button>
+        <Styled.Button onPress={handleNavigateToGiveClassesPage}>
           <Styled.ButtonImage source={giveClassesIcon} />
 
           <Styled.ButtonText>
